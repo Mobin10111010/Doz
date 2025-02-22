@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <audio id="background-music" loop>
+    <source src="sounds/game-music.mp3" type="audio/mp3">
+  </audio>
+</head>
+<body>
+  <div class="landing-page" id="landing-page">
+    <div class="hero-container">
+      <div class="hero-title">تیک تاک تو</div>
+      <div class="hero-subtitle"></div>
+      <div class="floating-shapes">
+        <div class="x-shape">X</div>
+        <div class="o-shape">O</div>
+      </div>
+      <button class="start-button" id="start-game">شروع بازی</button>
+    </div>
+  </div>
+
+  <div class="game-container" id="game-container" style="display: none;">
+    <div class="container">
+      <h1>تیک تاک تو سه بعدی</h1>
+      
+      <div class="game-mode">
+        <button id="ai-mode" class="glow-button">بازی با هوش مصنوعی</button>
+        <button id="two-player" class="glow-button">بازی دو نفره</button>
+      </div>
+
+      <div class="status">
+        <span id="status-text">انتخاب حالت بازی</span>
+      </div>
+
+      <div class="board">
+        <div class="cube">
+          <div class="face front">
+            <div class="grid">
+              <div class="cell" data-index="0"></div>
+              <div class="cell" data-index="1"></div>
+              <div class="cell" data-index="2"></div>
+              <div class="cell" data-index="3"></div>
+              <div class="cell" data-index="4"></div>
+              <div class="cell" data-index="5"></div>
+              <div class="cell" data-index="6"></div>
+              <div class="cell" data-index="7"></div>
+              <div class="cell" data-index="8"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button id="reset" class="glow-button">شروع مجدد</button>
+      
+      <div class="particles"></div>
+    </div>
+  </div>
+  
+  <script type="module" src="game.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
